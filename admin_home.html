@@ -1,0 +1,130 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title align ="center">Kitega Community Information System</title>
+<meta http-equiv="Content-type" content="text/html; charset=utf-8" />
+<link rel="stylesheet" href="css/style.css" type="text/css" media="all" />
+<style type="text/css">
+<link rel="icon" type="image/png" href="/css/images/favicon.png" sizes="16x16">
+
+
+.div1 {
+height: 98%;
+width: 99%;
+background-image: url(f1.jpg);
+
+border-color: #a64dff;
+
+}
+.div2 {
+width:370px;
+
+border-color: #c62007;
+
+
+font-weight: bold;
+font-size: 35px;
+text-align: left;
+
+}
+.div3 {
+padding: 10px;
+font-weight: bold;
+font-size: 25px;
+line-height: 50px;
+}
+input[type=text], select {
+width: 370px;
+padding: 12px 20px;
+margin: 8px 0;
+display: inline-block;
+border: 1px solid #ccc;
+border-radius: 4px;
+box-sizing: border-box;
+}
+input[type=submit] {
+width: 370px;
+background-color: #4CAF50;
+color: white;
+padding: 14px 20px;
+margin: 18px 0;
+border: none;
+border-radius: 4px;
+cursor: pointer;
+}
+input[type=submit]:hover {
+background-color: #45a049;
+}
+</style>
+</head>
+<body>
+<!-- Header -->
+<div id="header">
+  <div class="shell">
+    <!-- Logo + Top Nav -->
+    <div id="top">
+      <h1><a href="#">Welcome to Kitega Community Information System </a></h1>
+   
+    </div>
+    <!-- End Logo + Top Nav -->
+    <!-- Main Nav -->
+    <div id="navigation">
+    <ul>
+        <li><a href="index.html"class="active"><span>Home</span></a></li>
+        
+      </ul>
+    </div>
+    <!-- End Main Nav -->
+  </div>
+</div>
+<!-- End Header -->
+<!-- Container -->
+<div id="container">
+  <div class="shell">
+    <!-- Small Nav -->
+    <div class="small-nav"> <a href="index.html">Create Account</a> <span>&gt;</span>  login </div>
+    <!-- End Small Nav -->
+       <!-- Main -->
+    <script>
+function pformat()
+{
+var pw=document.forms["sign_in"]["Password"].value;
+var cl=/[A-Z]/.test(pw);//checking for capital letter
+var nu=/[0-9]/.test(pw);//checking for numeral
+var sc=/[^a-zA-Z0-9]/.test(pw);//checking for special character
+if(!(cl==true && nu==true && sc==true))
+{
+alert("Password must contain a number,capital letter and special character");//alerting user about password format
+return false;
+}
+}
+</script>
+</head>
+<body>
+<div class="div1" align="center">
+<div class="div2">Login Credentials
+<div class="div3">
+<form name="sign_in" action="#" onsubmit="return pformat()" method="post">
+Admin Name: <input type="text" name="UserId" maxlength="10" minlength="3" placeholder="Enter 3 - 25 characters" required><br>
+Password: <input type="text" name="Password" placeholder="Enter 3 - 30 characters"
+maxlength="10" minlength="3" required><br>
+<input type="submit">
+</form>
+</div>
+</div>
+</div>
+     
+      <div class="cl">&nbsp;</div>
+    </div>
+    <!-- Main -->
+  </div>
+</div>
+<!-- End Container -->
+</br></br></br></br></br></br>
+<!-- Footer -->
+<div id="footer">
+  <div class="shell"> <span class="left">&copy; 2017 - Kitega Community Center</span> <span class="right"> Design by <a href="#">Kitega Community Center</a> </span> </div>
+</div>
+<!-- End Footer -->
+</body>
+</html>
